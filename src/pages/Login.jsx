@@ -1,7 +1,7 @@
 import React from "react"
 import { useDispatch } from "react-redux"
 import { authActions } from "../store"
-import "./login.css"
+import "../styles/login.css"
 
 export const Login = () => {
   const dispatch = useDispatch()

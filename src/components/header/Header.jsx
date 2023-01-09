@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { Card } from "./Card"
+import { Card } from "../UI/Card"
 import "./header.css"
-import { User } from "./User"
+import { User } from "../../pages/User"
 
 export const Header = () => {
   window.addEventListener("scroll", function () {

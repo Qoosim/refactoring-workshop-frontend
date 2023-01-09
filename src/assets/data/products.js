@@ -1,8 +1,4 @@
-import React from "react"
-import "./product.css"
-import { ProductCart } from "./ProductCart"
-
-const product = [
+export const products = [
   {
     id: 1,
     name: "ACM Sebionex Hydra",
@@ -220,23 +216,3 @@ const product = [
     desc: "The term cleanser refers to a product that cleans or removes dirt or other substances. A cleanser could be a detergent, and there are many types of cleansers that are produced with a specific objective or focus.",
   },
 ]
-
-export const Product = () => {
-  return (
-    <>
-      <section className="product">
-        <div className="container grid3">
-          {product.map((item) => (
-            <ProductCart
-              key={item.id}
-              id={item.id}
-              cover={item.cover}
-              name={item.name}
-              price={item.price}
-            />
-          ))}
-        </div>
-      </section>
-    </>
-  )
-}

@@ -6,7 +6,7 @@ import { GrHelp } from "react-icons/gr"
 import { IoSettingsOutline } from "react-icons/io5"
 import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
-import { authActions } from "../../store/"
+import { authActions } from "../store/"
 
 export const User = () => {
   const user = true

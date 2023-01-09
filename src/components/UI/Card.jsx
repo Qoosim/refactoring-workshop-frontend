@@ -49,7 +49,7 @@ export const Card = () => {
         <div className="checkOut">
           <button>
             <span>CHECKOUT</span>
-            <label htmlFor="">${total}</label>
+            <label htmlFor="">${total.toFixed(2)}</label>
           </button>
         </div>
       </div>

@@ -31,12 +31,12 @@ export const CartItems = ({ id, cover, name, price, quantity, totalPrice }) => {
 
             <div className="price">
               <div className="qty flexCenter">
-                <button className="plus" onClick={incCartitems}>
-                  <AiOutlinePlus />
+                <button className="plus" onClick={descCartitems}>
+                  <AiOutlineMinus />
                 </button>
                 <button className="num">{quantity}</button>
-                <button className="minus" onClick={descCartitems}>
-                  <AiOutlineMinus />
+                <button className="minus" onClick={incCartitems}>
+                  <AiOutlinePlus />
                 </button>
               </div>
               <div className="priceTitle">${totalPrice}</div>
