@@ -10,10 +10,10 @@ import { authActions } from "../store/"
 
 export const User = () => {
   const user = true
-  const [open, setOpen] = useState(false)
+  const [openProfile, setOpenProfile] = useState(false)
 
-  const close = () => {
-    setOpen(null)
+  const closeProfile = () => {
+    setOpenProfile(null)
   }
 
   const dispatch = useDispatch()
@@ -25,15 +25,15 @@ export const User = () => {
       <div className="profile">
         {user ? (
           <>
-            <button className="img" onClick={() => setOpen(!open)}>
+            <button className="img" onClick={() => setOpenProfile(!openProfile)}>
               <img
                 src="https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
                 alt=""
               />
             </button>
 
-            {open && (
-              <div className="openProfile boxItems" onClick={close}>
+            {openProfile && (
+              <div className="openProfile boxItems" onClick={closeProfile}>
                 <div className="image">
                   <Link to="/account">
                     <div className="img">
