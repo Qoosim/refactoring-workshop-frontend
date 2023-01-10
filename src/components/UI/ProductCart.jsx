@@ -2,7 +2,7 @@ import React from "react"
 import { AiOutlinePlusCircle } from "react-icons/ai"
 import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
-import { cartActions } from "../../store"
+import { cartActions } from "../../redux/store"
 
 export const ProductCart = ({ id, cover, name, price }) => {
   const dispatch = useDispatch()

@@ -1,7 +1,7 @@
 import React from "react"
 import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
 import { useDispatch } from "react-redux"
-import { cartActions } from "../../store"
+import { cartActions } from "../../redux/store"
 
 export const CartItems = ({ id, cover, name, price, quantity, totalPrice }) => {
   const dispatch = useDispatch()
