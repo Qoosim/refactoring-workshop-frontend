@@ -10,10 +10,10 @@ import { authActions } from "../redux/store/"
 
 export const User = () => {
   const user = true
-  const [openProfile, setOpenProfile] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
-  const closeProfile = () => {
-    setOpenProfile(null)
+  const handleProfile = () => {
+    setIsOpen(null)
   }
 
   const dispatch = useDispatch()
@@ -25,15 +25,15 @@ export const User = () => {
       <div className="profile">
         {user ? (
           <>
-            <button className="img" onClick={() => setOpenProfile(!openProfile)}>
+            <button className="img" onClick={() => setIsOpen(!isOpen)}>
               <img
                 src="https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
                 alt=""
               />
             </button>
 
-            {openProfile && (
-              <div className="openProfile boxItems" onClick={closeProfile}>
+            {isOpen && (
+              <div className="openProfile boxItems" onClick={handleProfile}>
                 <div className="image">
                   <Link to="/account">
                     <div className="img">
