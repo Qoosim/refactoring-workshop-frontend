@@ -12,7 +12,7 @@ export const ProductCart = ({ id, cover, name, price }) => {
   return (
     <div className="box boxItems" id="product" onClick={addToCart} key={id}>
       <div className="img">
-        <Link to="/#">
+        <Link to="#">
           <img src={cover} alt="cover" />
         </Link>
       </div>
