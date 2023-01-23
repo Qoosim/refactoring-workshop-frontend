@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { Card } from "../UI/Card"
+import { Card } from "../Products/Card"
 import "./header.css"
 import { User } from "../../pages/User"
 
