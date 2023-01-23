@@ -6,20 +6,20 @@ import { cartActions } from "../../redux/store"
 export const CartItems = ({ id, cover, name, price, quantity, totalPrice }) => {
   const dispatch = useDispatch()
 
-  const incCartitems = () => {
+  const incrementCartItems = () => {
     dispatch(cartActions.addToCart({ id, name, price }))
   }
-  const descCartitems = () => {
+  const decrementCartItems = () => {
     dispatch(cartActions.removeFromCart(id))
   }
-  const deleteCartitems = () => {
+  const deleteCartItems = () => {
     dispatch(cartActions.delete(id))
   }
   return (
     <>
       <div className="cardList" key={id}>
         <div className="cartContent">
-          <div className="img" onClick={deleteCartitems}>
+          <div className="img" onClick={deleteCartItems}>
             <img src={cover} alt="" />
             <button className="remove flexCenter" >
               <AiOutlineClose />
@@ -31,11 +31,11 @@ export const CartItems = ({ id, cover, name, price, quantity, totalPrice }) => {
 
             <div className="price">
               <div className="qty flexCenter">
-                <button className="plus" onClick={descCartitems}>
+                <button className="plus" onClick={incrementCartItems}>
                   <AiOutlineMinus />
                 </button>
                 <button className="num">{quantity}</button>
-                <button className="minus" onClick={incCartitems}>
+                <button className="minus" onClick={incrementCartItems}>
                   <AiOutlinePlus />
                 </button>
               </div>
