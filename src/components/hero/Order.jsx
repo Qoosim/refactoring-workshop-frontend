@@ -1,6 +1,6 @@
 import React from "react"
 import "./slider.css"
-import { order } from '../../assets/data/order';
+import { order } from '../../data/order';
 
 export const Order = () => {
   return (

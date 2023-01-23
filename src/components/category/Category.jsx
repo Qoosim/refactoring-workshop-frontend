@@ -5,7 +5,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick-theme.css"
 import "slick-carousel/slick/slick.css"
 import "./category.css"
-import { category } from '../../assets/data/category';
+import { category } from '../../data/category';
 
 function SampleNextArrow(props) {
   const { onClick } = props
